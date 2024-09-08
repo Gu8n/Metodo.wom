@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Método de Minutos WOM - ¡Minutos Ilimitados!</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Evita las barras de desplazamiento */
+        }
+
+        /* Contenedor del video y la imagen de fondo */
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        /* Imagen de fondo */
+        .background-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Video de fondo */
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none; /* Inicialmente oculto */
+        }
+
+        /* Contenedor principal */
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 20px;
+        }
+
+        /* Título principal */
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(45deg, #ff005a, #ff9900, #ffeb3b);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: colorChange 3s infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes colorChange {
+            0% { color: #ff005a; }
+            50% { color: #ffeb3b; }
+            100% { color: #ff005a; }
+        }
+
+        /* Párrafo */
+        p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+
+        /* Botones de contacto */
+        .cta {
+            display: inline-block;
+            margin: 15px;
+            background-color: #25D366;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: background-color 0.3s;
+        }
+
+        .cta:hover {
+            background-color: #1DA253;
+        }
+
+        /* Íconos */
+        .icon {
+            max-width: 60px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        /* Contenido creativo adicional */
+        .highlight {
+            font-weight: bold;
+            color: #ffeb3b;
+        }
+
+        /* Botón de sonido */
+        .sound-button {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background: #ff005a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 10;
+            transition: background-color 0.3s;
+        }
+
+        .sound-button:hover {
+            background: #e6004e;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor del video y la imagen de fondo -->
+    <div class="background-container">
+        <!-- Imagen de fondo -->
+        <img src="https://i1.sndcdn.com/artworks-000347607078-jxaepk-t500x500.jpg" class="background-image" alt="Imagen de fondo">
+
+        <!-- Video de fondo en MP4 -->
+        <video id="backgroundVideo" autoplay loop class="background-video">
+            <source src="https://vod3.cf.dmcdn.net/sec2(aaeZJRLV3SskHii5U2mnJpAvkn3B2rC5FNGO3LHBf2YsTgIcD6JK-QPFCe4qPCEAGLnu0kVvevPrJI0Iwm3uZPu6fkY_dFxJslUT1XmQQi9jiO_ICyzvIm7EUSrAe0QO6dPU8klawq36hzRtNVYGsA)/video/879/919/386919978_mp4_h264_aac_hd.m3u8#cell=cf3" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+    </div>
+
+    <!-- Botón para activar el sonido -->
+    <button class="sound-button" onclick="activarSonido()">Activar video</button>
+
+    <div class="container">
+        <h1>¡NUEVO MÉTODO DE MINUTOS CASI INFINITOS!</h1>
+        <p>Descubre cómo puedes obtener <span class="highlight">minutos ilimitados</span> con WOM. ¡Es el mejor método para mantenerte siempre conectado sin preocuparte por el saldo!</p>
+        
+        <!-- Icono WOM -->
+        <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/f/f4/WOM_logo.png" alt="WOM Logo">
+        
+        <p>¿Qué esperas para adquirir tu método? ¡La conexión sin límites está a un clic de distancia!</p>
+
+        <!-- Botones con íconos de WhatsApp -->
+        <div>
+            <a class="cta" href="https://wa.me/573005209415?text=Hola%20quiero%20conocer%20el%20m%C3%A9todo%20de%20minutos%20casi%20infinitos%20de%20StreamPlusCo" target="_blank">
+                <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                Contactar a StreamPlusCo
+            </a>
+        </div>
+
+        <div>
+            <a class="cta" href="https://wa.me/573005097649?text=Hola%20quiero%20conocer%20el%20m%C3%A9todo%20de%20minutos%20casi%20infinitos%20de%20Crismods" target="_blank">
+                <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                Contactar a Crismods
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function activarSonido() {
+            const video = document.getElementById('backgroundVideo');
+            const image = document.querySelector('.background-image');
+            video.style.display = 'block'; // Muestra el video
+            image.style.display = 'none'; // Oculta la imagen de fondo
+            video.muted = false; // Activa el sonido
+            video.play(); // Asegura que el video se reproduzca
+        }
+    </script>
+
+</body>
+</html>
